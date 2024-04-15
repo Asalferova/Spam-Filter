@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width" />
+  <title>Learn Regular Expressions by Building a Spam Filter</title>
+  <link rel="stylesheet" href="./css/styles.css" />
+</head>
+
+<body>
+  <header class="main-text">
+    <h1 class="title">Это спам?</h1>
+    <p class="description">
+      Введите фразу, чтобы проверить, будет ли она помечена как спам или нет.
+    </p>
+  </header>
+
+  <main>
+    <div class="input-container">
+      <textarea placeholder="Введите фразу здесь" value="" type="text" name="message" id="message-input" rows="10"
+        cols="40"></textarea>
+      <button class="btn" id="check-message-btn" type="button">
+        Проверить
+      </button>
+    </div>
+
+    <p id="result"></p>
+  </main>
+
+  <footer class="footer"></footer>
+  <script src="./js/script.js"></script>
+</body>
+
+</html>

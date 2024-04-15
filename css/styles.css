@@ -1,0 +1,102 @@
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --main-bg-color: #f0f0f0;
+  --title-color: #333;
+  --description-color: #555;
+  --button-bg-color: #007bff;
+  --button-hover-color: #0056b3;
+  --text-color: #333;
+  --header-bg-color: #333;
+  --header-text-color: #fff;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: var(--header-bg-color);
+  padding: 20px;
+  text-align: center;
+}
+
+.main-text {
+  margin-bottom: 20px;
+}
+
+.title {
+  font-size: 24px;
+  color: var(--header-text-color);
+}
+
+.description {
+  font-size: 16px;
+  color: var(--main-bg-color);
+}
+
+main {
+  padding: 20px;
+}
+
+.message-label {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 16px;
+  color: var(--title-color);
+}
+
+.input-container {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+}
+
+textarea {
+  border-radius: 10px;
+  width: 50%; 
+  padding: 10px;
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+#message-input:placeholder-shown {
+  text-align: center;
+}
+
+.btn {
+  background-color: var(--header-bg-color);
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s; 
+}
+
+.btn:hover {
+  background-color: var(--header-bg-color);
+}
+
+#result {
+  margin-top: 10px;
+  font-size: 18px;
+  color: var(--text-color);
+  text-align: center;
+}
+
+.footer {
+  background-color: var(--header-bg-color);
+  padding: 10px 0;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
